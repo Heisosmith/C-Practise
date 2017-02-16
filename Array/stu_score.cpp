@@ -1,3 +1,5 @@
+//输入若干个学生成绩，用负数结束输入，输出低于平均分的学生成绩
+
 #include <iostream>
 #include <iomanip>
 using namespace std;
