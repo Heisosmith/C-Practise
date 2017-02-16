@@ -5,7 +5,7 @@
 using namespace std;
 
 int main(){
-/*
+
     int count[26] ={0};
     char str[100];
     //Debug：直接cin>>str; 当读到输入字符流的空格时，则会终止输入.
@@ -26,8 +26,8 @@ int main(){
         //(char)(i +'a';) 用ascii码顺序输出字母
         cout<< setw(3)<<(char)(i +'a')<<"\t\t" << count[i] <<endl;
     }
-*/
-/*
+
+
     //单变量处理字符流
 
     int n[26] ={0},k;
@@ -42,7 +42,7 @@ int main(){
         cout<< setw(3)<< (char)('a'+ k)<< "\t\t" 
             << n[k]<<endl;
     }
-*/
+
     //统计10名学生每个月份生日的学生人数
     int month[13]={0},i,
         stu[10] ={1,2,3,4,5,6,7,8,9,10};
