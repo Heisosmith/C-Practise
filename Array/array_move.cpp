@@ -8,8 +8,7 @@ int main(){
         temp  = 0,
         step  = 0,
         direct= 0;
-
-    cout<< "Choose move direction: " <<endl
+   cout<< "Choose move direction: " <<endl
         << "1:forward" <<endl
         << "2: backward"<<endl;
     cin>>direct;
@@ -20,15 +19,15 @@ int main(){
             if( direct == 1){
                 //元素前移
                 temp = a[0];
-                for(j=0;j<9;j++)
-                    a[j] = a[j+1];
+                for(j=1;j<10;j++)
+                    a[j-1] = a[j];
                 a[9]= temp;
             }
             if( direct == 2){
                 //元素后移
                 temp = a[9];
-                for(j=8;j>=0;j--)
-                    a[j+1] = a[j];
+                for(j=9;j>0;j--)
+                    a[j] = a[j-1];
                 a[0] = temp;
             }
     }
