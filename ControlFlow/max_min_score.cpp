@@ -7,7 +7,7 @@ int main(){
     double score[10],
            max = 0,
            min = 0,
-           aveg= 0,
+           avg= 0,
            sum = 0;
     int i;
     for(i=0;i<10;i++){
@@ -22,10 +22,10 @@ int main(){
             min = score[i];
         sum += score[i];
     }
-    aveg = (sum -max -min)/10.0;
+    avg = (sum -max -min)/10.0;
     cout<<"max= "<< max <<endl
         <<"min= "<< min <<endl
-        <<"aveg="<< aveg<<endl;
+        <<"avg="<< avg<<endl;
     return 0;
 }
 
