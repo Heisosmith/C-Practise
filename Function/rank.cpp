@@ -2,6 +2,7 @@
 //若有k位选手名词相同，则下一个名次增加k
 
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 void ranking(int a[],int b[]);
@@ -17,7 +18,9 @@ int main(){
         b[i] = 0;
     }
     ranking(a,b);
-    cout<< a[i]<<" "<< b[i] <<endl;
+    cout<< n<<"个选手的成绩和名次依次为:" <<endl;
+    for(i=1;i <=n;i++)
+        cout<< setw(3)<< a[i]<<"\t"<< b[i] <<endl;
     return 0;
 }
 
